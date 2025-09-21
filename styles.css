@@ -1,0 +1,38 @@
+body {
+  margin: 0;                     /* убираем стандартные отступы */
+  font-family: Arial, sans-serif; /* простой шрифт */
+  background-color: #d0d8f8;      /* светлый фон всей страницы */
+  color: #f50404;                    /* цвет текста */
+}
+
+h2 {
+  color: #281a3a;                    /* цвет заголовков */
+}
+
+p {
+  line-height: 1.5;               /* высота строки для удобства чтения */
+  color: #333;
+}
+#about {
+  max-width: 800px;                 /* ширина блока */
+  margin: 40px auto;                /* центрирование блока */
+  padding: 20px;                     /* внутренние отступы */
+  background-color: #fff;           /* белый фон */
+  border-radius: 10px;              /* скруглённые углы */
+  box-shadow: 0 2px 6px rgba(247, 1, 1, 0.1);  /* лёгкая тень */
+}
+nav {
+  background-color: #222;    /* тёмный фон */
+  padding: 10px 20px;        /* отступы */
+  text-align: center;         /* выравнивание по центру */
+}
+
+nav a {
+  color: #fff;                /* белый текст */
+  text-decoration: none;      /* убираем подчеркивание */
+  margin: 0 10px;             /* промежутки между ссылками */
+}
+
+nav a:hover {
+  color: #f0a500;             /* цвет при наведении */
+}
