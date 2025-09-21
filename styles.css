@@ -19,7 +19,7 @@ p {
   padding: 20px;                     /* внутренние отступы */
   background-color: #fff;           /* белый фон */
   border-radius: 10px;              /* скруглённые углы */
-  box-shadow: 0 2px 6px rgba(247, 1, 1, 0.1);  /* лёгкая тень */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  /* лёгкая тень */
 }
 nav {
   background-color: #222;    /* тёмный фон */
@@ -35,4 +35,30 @@ nav a {
 
 nav a:hover {
   color: #f0a500;             /* цвет при наведении */
+}
+#services {
+  display: flex;                 /* включаем flexbox */
+  justify-content: space-around; /* равномерное расстояние между карточками */
+  margin: 40px auto;             /* отступ сверху/снизу */
+  max-width: 1000px;             /* максимальная ширина секции */
+}
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1;           /* чтобы все карточки были одинаковой ширины */
+  margin: 0 10px;    /* отступ между карточками */
+}
+@media (max-width: 600px) {
+  #services {
+    flex-direction: column;  /* карточки выстраиваются вертикально */
+    align-items: center;     /* центрируем их */
+  }
+
+  .card {
+    margin: 10px 0;          /* вертикальные отступы между карточками */
+    width: 80%;              /* ширина карточек по экрану */
+  }
 }
